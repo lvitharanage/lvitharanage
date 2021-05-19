@@ -1,7 +1,7 @@
 """ This script reads through a mail log and built a histogram
 using  a dictionary to count how many messages have come from
 each email address. It also prints email address and number of
-messages email address with highest number of messages"""
+messages for the email address with highest number of messages"""
 
 email_counter = dict()
 file_name = open(input('Please enter file name:'))
@@ -16,7 +16,7 @@ for line in file_name:
         continue
     email = wds[1]
     email_counter[email] = email_counter.get(email, 0) + 1
-    """ print(email, email_counter[email]) cna be used to
+    """ print(email, email_counter[email]) can be used to
     print key and value pair as it loops through"""
 print(email_counter)
 
